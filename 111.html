@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://www.swagger.kr/index.html">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+    <title>떠나자</title>
+    <style>
+
+        
+        
+*{margin: 0; padding:0;}
+ul,li,ol{list-style:none;}
+*{transition: 0.5s; box-sizing: border-box;}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-image: url(mainbg1.jpg);}
+    25%  {background-image: url(mainbg2.jpg);}
+    50%  {background-image: url(mainbg3.jpg);}
+    75%  {background-image: url(mainbg2.jpg);}
+    100% {background-image: url(mainbg1.jpg);}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-image: url(mainbg1.jpg);}
+    25%  {background-image: url(mainbg2.jpg);}
+    50%  {background-image: url(mainbg3.jpg);}
+    75%  {background-image: url(mainbg2.jpg);}
+    100% {background-image: url(mainbg1.jpg);}
+}
+        #tt{width: 1100px; height: auto; margin: 0 auto; border: 1px solid yellow;}
+        #wrap{width: 100%; height: auto; margin: 0 auto; }
+        
+        #header{width: 100%; height: auto; margin: 0 auto;}
+        
+        #topmenu{width:100%; height: 40px; background-color: #dbdbdb;}
+        #topmenu ul{float: right;}
+        #topmenu ul li{display: inline-block; margin: 10px; font-size: 13px;}
+        /*#topmenu ul li:last-child{margin-right: 250px;}*/
+        
+        #header_logo{width: 100%; height: 130px;}
+        #header_logo h1{float: left;} 
+        #header_logo input{float: left; width: 400px; height: 30px; margin: 50px;
+        border: 3px solid #6b8eb4; }
+        
+        #navi{width: 100%; height: 60px; background-color: #6b8eb4; float: left;border: 1px solid red;}
+        #navi ul{width: 100%;float: left; border: 1px solid red;}
+        #navi ul li{
+            border: 1px solid green;
+            float: left;
+            width: 130px; 
+            height: 40px;
+            display: inline-block;
+            margin: 5px; 
+            text-align: center; 
+            line-height: 40px;
+            font-family: "Swagger TTF";
+            font-size: 16px;
+            font-weight: 800;
+            color: #000;
+        }
+        
+        
+        #main{width: 100%; height:760px; background-image: url(mainbg1.jpg);
+         
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 7s; animation-iteration-count: infinite;}
+        
+        #rightmenu{ width: 100px; height: 200px; 
+
+        float: right; 
+            
+        }
+        #rightmenu ul{ width: 100px; height: auto; position: fixed; background-color: yellow; }
+        #rightmenu ul li{width: 100px; height: 50px;}
+        
+        #quickmenu{width: 320px; height: 30px; float: left; 
+        border: 1px solid red;}
+        #quickmenu ul{width: 320px; height: 30px;
+            background-image: url(find.png); font-weight: 900;}
+        #quickmenu ul li{color: #fff; font-size: 14px; float: left; }
+        #quickmenu ul li:nth-child(1){width: 150px;}
+        #quickmenu ul li:nth-child(2){width: 150px;}
+        #quickmenu ul li:nth-child(3){width: 20px;}
+        #quickmenu i{margin: 3px; margin-top: 7px;}
+      
+   .find{
+        display: inline-block;
+        
+    }
+    
+   .find-content {
+    background-image: url(find.png);
+    background-repeat: repeat;
+    top: 5px;
+    position: relative;
+    color: #fff;
+    display: none;
+    min-width: 300px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: none;
+    color: #fff;
+    font-size: 12px;
+    height: 400px;
+        
+}
+.finder{cursor: pointer; text-align: center; line-height: 25px;}
+.finder:hover{color: pink;}
+        
+.find-content p{margin-left: 10px; width: 300px;}
+        
+ .airportfind-content {
+    background-image: url(find.png);
+    right: 150px;   
+    top: 5px;
+    position: relative;
+    color: #fff;
+    display: none;
+    min-width: 300px;
+    height: 400px;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: none;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+        
+}
+        
+.airportfinder{cursor: pointer; text-align: center;  line-height: 25px;}
+        .airportfinder:hover{color: pink;}
+        
+.closebtn{cursor: pointer;}
+
+#content{width: 1100px; height: 1000px; margin: 0 auto;
+        border: 1px solid red;}
+
+#footer{width: 100%; height: 400px; margin: 0 auto; border: 3px solid gray; background-color: dimgrey}   
+    </style>
+</head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+<body>
+    <div id="wrap">
+    <div id="header">
+       
+        <div id="topmenu">
+          <div id="tt">
+              
+          
+           <ul>
+               <li>로그인</li>
+               <li>회원가입</li>
+           </ul>
+           
+          </div>  
+        </div>
+        <div id="header_logo">
+           <div id="tt"> 
+            <h1><img src="logo.jpg" alt="로고" width="160px" height="120px"></h1>
+            <input type="text" name="search" placeholder="search">
+            </div>
+        </div>
+                
+        
+        
+        <div id="navi">
+        <div id="tt">   
+           
+               
+         
+            <ul>
+                <li>해외패키지</li>
+                <li>자유여행</li>
+                <li>허니문</li>
+                <li>골프</li>
+                <li>부산/대구출발</li>
+                <li>해외항공</li>
+            </ul>
+            
+            </div>          
+
+        </div>
+    </div>  <!--header부분--> 
+   
+    <div id="main">
+      <div id="tt">
+       <div id="quickmenu">
+          
+           <ul>
+               <li class="find"><p class="finder">여행상품 찾기</p>
+               <div class="find-content">
+               <p>도쿄행</p>
+               <p>도쿄행</p>
+               <p>도쿄행</p>
+               <p>도쿄행</p>
+               <p>도쿄행</p>
+               <p>도쿄행</p>
+                   
+             
+               </div>
+               
+               </li>
+               
+               
+               
+               <li class="airportfind"><p class="airportfinder">항공권 찾기</p>
+               <div class="airportfind-content">
+               <p>미국행</p>
+               <p>미국행</p>
+               <p>미국행</p>
+               <p>미국행</p>
+               <p>미국행</p>
+               <p>미국행</p>
+                   
+     
+               </div>
+   
+   
+               </li>
+               <li><i class="fa fa-times closebtn" aria-hidden="true"></i></li>
+           </ul>
+           
+         </div>  
+       </div>
+       
+       <script>
+        $(document).ready(function(){
+        $(".finder").click(function(){
+        $(".airportfind-content").hide("fast");               
+        $(".find-content").show("fast");
+        });
+
+         $(".airportfinder").click(function(){
+            $(".find-content").hide("fast"); 
+            $(".airportfind-content").show("fast");
+        });
+        
+        $(".closebtn").click(function(){
+            $(".find-content").hide();
+            $(".airportfind-content").hide();
+        });
+        
+        
+    });
+    </script>
+       
+       
+       
+        <div id="rightmenu">
+                <ul>
+                    <li>100</li>
+                    <li>200</li>
+                    <li>300</li>
+                    <li>400</li>
+                    <li>TOP</li>
+                </ul>
+            </div>
+    </div>
+ 
+    
+    
+    
+    
+    
+    <div id="content">
+        
+        
+    
+    </div>
+    <div id="footer">
+        FOOTER
+    </div>
+    </div>
+</body>
+</html>
